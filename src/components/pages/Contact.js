@@ -9,11 +9,12 @@ export default function Contact() {
           <a href="https://github.com/austinslatey">Visit my Github</a>
         </li>
         <li>
-          <a href="https://github.com/austinslatey">
+          <a href="https://gmail.com/austinslater58@gmail.com">
             Reach out to me by email: austinslater58@gmail.com
           </a>
-        </li>
+        </li>   
       </ol>
+      
     </div>
   );
 }
