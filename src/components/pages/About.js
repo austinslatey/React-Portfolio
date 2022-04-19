@@ -22,7 +22,7 @@ export default function About() {
           fell in love!
         </li>
         <li>
-          I became so interested, I decided to enroll in a Web Development coding bootcamp at the University of Minnesota, to educate myself further
+          I became so interested, I decided to enroll in a Web Development coding bootcamp at the University of Minnesota. It was a good decision to educate myself further
           into the vast world of coding. With the knowledge I've used, I plan to
           advance into a full-stack web development career opportunity to work with a organization that suits the company and I best.
         </li>

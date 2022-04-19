@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
-import NavTabs from './NavTabs';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import ContactForm from './pages/ContactForm';
-
-
+import React, { useState } from "react";
+import NavTabs from "./NavTabs";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import ContactForm from "./pages/ContactForm";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState("Home");
 
   // TODO: Add a comment describing the functionality of this method
   //checking each condition to see what page we are on , then rendering that page, otherwise rendering the contact page
   const renderPage = () => {
-    if (currentPage === 'Home') {
+    if (currentPage === "Home") {
       return <Home />;
     }
-    if (currentPage === 'About') {
+    if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === 'Projects') {
+    if (currentPage === "Projects") {
       return <Projects />;
     }
-    if (currentPage === 'Contact') {
+    if (currentPage === "Contact") {
       return <Contact />;
     }
-    <ContactForm />;
+    if (currentPage === "ContactForm") return <ContactForm />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
