@@ -1,8 +1,10 @@
 import React from "react";
+import Box from '@mui/material/Box';
+
 
 export default function About() {
   return (
-    <div>
+    <Box>
       <h1>About Page</h1>
       <ul>
         <li>
@@ -27,6 +29,6 @@ export default function About() {
           advance into a full-stack web development career opportunity to work with a organization that suits the company and I best.
         </li>
       </ul>
-    </div>
+    </Box>
   );
 }
