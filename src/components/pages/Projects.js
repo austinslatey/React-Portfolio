@@ -1,6 +1,6 @@
 import React from "react";
-import recipease from './newREADMEimg.png';
-import travelbug from './travelbug-preview.jpg';
+import recipease from '../../Assets/Images/newREADMEimg.png';
+import travelbug from '../../Assets/Images/travelbug-preview.jpg';
 
 export default function Projects() {
   // const background = <img
