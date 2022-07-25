@@ -8,12 +8,8 @@ export default function Home() {
     fontFamily: "Arial"
   };
 
-  // const honeyImage = {
-  //   backgroundImage: "../../assets/background"
-  // }
   return (
     <div>
-      {/* <h1>Hello! I'm Austin Slater!</h1> */}
       <div style={mystyle}>
         
       </div>

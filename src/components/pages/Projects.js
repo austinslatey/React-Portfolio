@@ -1,6 +1,15 @@
 import React from "react";
 import recipease from '../../Assets/Images/newREADMEimg.png';
 import travelbug from '../../Assets/Images/travelbug-preview.jpg';
+import { Box, CardMedia } from '@mui/material';
+import { CssBaseline } from '@mui/material';
+import { Grid } from '@mui/material';
+import { Typography } from '@mui/material';
+import Card from '@mui/material/Card';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme();
+
 
 export default function Projects() {
   // const background = <img
@@ -9,16 +18,19 @@ export default function Projects() {
   //   src="https://www.teahub.io/photos/full/87-879496_celinnyi-honeycomb-honey-honeycomb-background.jpg"
   //   ></img>
     return (
-      <div>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Box marginTop={3} marginBottom={3} sx={{ minHeight: "calc(100vh - 40px)", backgroundColor: "#90E0EF", borderTopLeftRadius: "8%", borderBottomRightRadius: "8%" }}>
+        <Grid container direction="column">
+        <Grid item xs={12} marginTop={3} alignSelf="center">
+          <Typography variant="h2" sx={{ minWidth: '100%'}}>Projects Page</Typography>
+        </Grid>
+        </Grid>
         <div>
-          <h1>Projects Page</h1>
-          {/* {ImageBackground} */}
           <div className="container d-flex p-2">
 
             <div className="row">
               <div className="card col-sm-6" style={{ width: "18rem" }}>
-                {/* <img className="card-img-top"
-            src="https://dsm01pap001files.storage.live.com/y4mpfSHmkO2Cd8Ch9s0uMPjusMsZH7qSFQuwZwh8SABAk_yTAVW49LQST9UXNFkIg4kYWcBwUbQTiB3J2Ux5yeo35riVVhXhSyOr9uD1tAWkyhOLOjxUSk2rifjMOi2Z4mBLbbHay8yKUPY2k4y7eCdDpDit6u3_D3Z8HfOpeaBeT85htBo6l64umPcT0uiZ56X?width=256&height=122&cropmode=none"></img> */}
                 <div className="card-body">
                   <h5 className="card-title">Horiseon-Industries</h5>
                   <p className="card-text">
@@ -53,9 +65,6 @@ export default function Projects() {
               </div>
             </div>
             <div className="card col-sm-6" style={{ width: "18rem" }}>
-              {/* <img className="card-img-top"
-            src="githubusercontent.com/93648326/149425101-bf29c067-c863-48dc-82ce-7acb6e5051c5.png"
-            alt="Card image cap"></img> */}
               <div className="card-body">
                 <h5 className="card-title">Group Project 1: Concert-Scout</h5>
                 <p className="card-text">
@@ -110,6 +119,7 @@ export default function Projects() {
               </div>
           </div>
         </div>
-      </div>
+        </Box>
+      </ThemeProvider>
     );
 }
