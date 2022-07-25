@@ -12,11 +12,6 @@ const theme = createTheme();
 
 
 export default function Projects() {
-  // const background = <img
-  //   className="background"
-  //   alt="ocean"
-  //   src="https://www.teahub.io/photos/full/87-879496_celinnyi-honeycomb-honey-honeycomb-background.jpg"
-  //   ></img>
     return (
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -27,7 +22,6 @@ export default function Projects() {
         </Grid>
         </Grid>
         <div>
-          <div className="container d-flex p-2">
 
             <div className="row">
               <div className="card col-sm-6" style={{ width: "18rem" }}>
@@ -43,6 +37,7 @@ export default function Projects() {
                     Click for github
                   </a>
                 </div>
+              </div>
               </div>
 
               
@@ -63,7 +58,7 @@ export default function Projects() {
                   </a>
                 </div>
               </div>
-            </div>
+            
             <div className="card col-sm-6" style={{ width: "18rem" }}>
               <div className="card-body">
                 <h5 className="card-title">Group Project 1: Concert-Scout</h5>
@@ -118,7 +113,6 @@ export default function Projects() {
                 </div>
               </div>
           </div>
-        </div>
         </Box>
       </ThemeProvider>
     );
