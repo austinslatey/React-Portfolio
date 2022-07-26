@@ -45,54 +45,6 @@ function NavTabs({ handlePageChange, currentPage }) {
         />
       </Tabs>
     </Box>
-    // Using onClick events to dynamically render navigational tabs
-    // <ul className="nav nav-tabs">
-    //   <li className="nav-item">
-    //     <a
-    //       href="#home"
-    //       onClick={() => handlePageChange('Home')}
-    //       className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Home
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#about"
-    //       onClick={() => handlePageChange('About')}
-    //       className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       About
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#Projects"
-    //       onClick={() => handlePageChange('Projects')}
-    //       className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Projects
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#contact"
-    //       onClick={() => handlePageChange('Contact')}
-    //       className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Contact
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#ContactForm"
-    //       onClick={() => handlePageChange('ContactForm')}
-    //       className={currentPage === 'ContactForm' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Contact Form
-    //     </a>
-    //   </li>
-    // </ul>
   );
 }
 
