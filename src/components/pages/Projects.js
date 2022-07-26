@@ -65,43 +65,66 @@ export default function Projects() {
             </CardActions>
           </Card>
         </Grid>
-        <Card className="card col-sm-6" style={{ width: "18rem" }}>
-          <div className="card-body">
-            <h5 className="card-title">Group Project 2: Travel-Bug</h5>
-            <p className="card-text">
-              Four creative and intuitive developers vs. Full-Stack Web
-              Development
-            </p>
-            <img className="card-img-top" src={travelbug} alt="Card cap"></img>
-            <a
-              href="https://travelbug-project.herokuapp.com/"
-              className="btn btn-primary"
-            >
-              Check it out!
-            </a>
-          </div>
-        </Card>
-
-        <Card className="card col-sm-6" style={{ width: "18rem" }}>
-          <img className="card-img-top" src={recipease} alt="Card cap"></img>
-          <div className="card-body">
-            <h3 className="card-title">RecipEase</h3>
-            <p className="card-text">
+        <Grid marginTop={10} container direction="row">
+          <Card item xs={{ maxWidth: 150 }} style={{ width: "18rem" }}>
+            <CardHeader
+              title="Group Project 2: Travel-Bug"
+              subheader="March 13, 2022"
+            />
+            <CardMedia
+              component="img"
+              height="194"
+              image={travelbug}
+              alt="travel-bug"
+            />
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+              To collab with teammates to develop a full-stack web application. Travel Bug is a webpage that hosts travel locations posted by users that allows individual users to browse for travel information and like locations to save to their personal login page. It also, lets the user create new location posts for other users to see in the homepage and lets them rate 1-5 stars on their trip/experience going to that location.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Stack direction="row" spacing={2}>
+                <a
+                  href="https://travelbug-project.herokuapp.com/"
+                  className="btn btn-primary"
+                >
+                  Travel-Bug Link
+                </a>
+              </Stack>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid marginTop={10} container direction="row">
+          <Card item xs={{ maxWidth: 150 }} style={{ width: "18rem" }}>
+            <CardHeader
+              title="Group Project 3: RecipEase"
+              subheader="March 13, 2022"
+            />
+            <CardMedia
+              component="img"
+              height="194"
+              image={recipease}
+              alt="recipease"
+            />
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
               Project one reunites for one last time!! Their duty is to create a
-              User Interface involving MERN, called RecipEase.
-            </p>
-            <p className="card-text">
-              Just a bunch of hungry folks with a desire to be more organized
+              User Interface involving MERN, called RecipEase. Just a bunch of hungry folks with a desire to be more organized
               with cooking and shopping
-            </p>
-            <a
-              href=" https://thebestrecipease.herokuapp.com/#homepage"
-              className="btn btn-primary"
-            >
-              Our Website :D
-            </a>
-          </div>
-        </Card>
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Stack direction="row" spacing={2}>
+                <a
+                  href="https://thebestrecipease.herokuapp.com/#homepage"
+                  className="btn btn-primary"
+                >
+                  RecipEase Link
+                </a>
+              </Stack>
+            </CardActions>
+          </Card>
+        </Grid>
       </Box>
     </ThemeProvider>
   );
