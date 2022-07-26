@@ -4,7 +4,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [userName, setUserName] = useState("");
   const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
