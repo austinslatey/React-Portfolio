@@ -3,41 +3,48 @@ import recipease from "../../Assets/Images/newREADMEimg.png";
 import travelbug from "../../Assets/Images/travelbug-preview.jpg";
 import concertScout from "../../Assets/Images/concert-scout.png";
 import CardHeader from "@mui/material/CardHeader";
-import { Box, CardActions, CardContent, CardMedia, Link } from "@mui/material";
-import { CssBaseline } from "@mui/material";
+import { Box, CardActions, CardContent, CardMedia } from "@mui/material";
+import { ScopedCssBaseline } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { maxWidth } from "@mui/system";
-import Button from "@mui/material/Button";
+// import { maxWidth } from "@mui/system";
+// import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+// import { ClassNames } from "@emotion/react";
 
 const theme = createTheme();
+
 
 export default function Projects() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
+      <ScopedCssBaseline>
       <Box
         marginTop={3}
         marginBottom={3}
         sx={{
+          flexGrow: 1,
           minHeight: "calc(100vh - 40px)",
           backgroundColor: "#90E0EF",
           borderTopLeftRadius: "8%",
           borderBottomRightRadius: "8%",
         }}
       >
-        <Grid container direction="column">
-          <Grid item xs={12} marginTop={3} alignSelf="center">
+        <Grid container direction="column" spacing={4}>
+          <Grid item xs={6} marginTop={3} alignSelf="center">
             <Typography variant="h2" sx={{ minWidth: "100%" }}>
               Projects Page
             </Typography>
           </Grid>
         </Grid>
-        <Grid marginTop={10} container direction="row">
-          <Card item xs={{ maxWidth: 150 }} style={{ width: "18rem" }}>
+
+
+        <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          
+        
+          <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
             <CardHeader
               title="Group Project 1: Concert-Scout"
               subheader="January 26, 2022"
@@ -54,7 +61,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Stack direction="row" spacing={2}>
+              <Stack direction="column" spacing={2}>
                 <a
                   href="https://austinslatey.github.io/concert-scout/"
                   className="btn btn-primary"
@@ -64,9 +71,11 @@ export default function Projects() {
               </Stack>
             </CardActions>
           </Card>
-        </Grid>
-        <Grid marginTop={10} container direction="row">
-          <Card item xs={{ maxWidth: 150 }} style={{ width: "18rem" }}>
+        
+  
+
+
+          <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
             <CardHeader
               title="Group Project 2: Travel-Bug"
               subheader="March 13, 2022"
@@ -83,7 +92,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Stack direction="row" spacing={2}>
+              <Stack direction="column" spacing={2}>
                 <a
                   href="https://travelbug-project.herokuapp.com/"
                   className="btn btn-primary"
@@ -93,9 +102,8 @@ export default function Projects() {
               </Stack>
             </CardActions>
           </Card>
-        </Grid>
-        <Grid marginTop={10} container direction="row">
-          <Card item xs={{ maxWidth: 150 }} style={{ width: "18rem" }}>
+
+          <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
             <CardHeader
               title="Group Project 3: RecipEase"
               subheader="March 13, 2022"
@@ -124,8 +132,12 @@ export default function Projects() {
               </Stack>
             </CardActions>
           </Card>
+   
         </Grid>
+      
       </Box>
+      </ScopedCssBaseline>
     </ThemeProvider>
+    
   );
 }
