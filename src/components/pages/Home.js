@@ -1,16 +1,12 @@
 import React from "react";
 import austinS from "../../Assets/Images/austinS.jpg"
-import CardHeader from "@mui/material/CardHeader";
-import { Box, CardActions, CardContent, CardMedia } from "@mui/material";
+import { Box, CardContent, CardMedia } from "@mui/material";
 import { ScopedCssBaseline } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { maxWidth } from "@mui/system";
-// import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-// import { ClassNames } from "@emotion/react";
+
 
 const theme = createTheme();
 
@@ -36,20 +32,27 @@ export default function Home() {
               </Typography>
             </Grid>
           </Grid>
-        
-          <Card sx={{ mx: "3rem" }} style={{ width: "29rem" }}>
-          <CardMedia
-              component="img"
-              height="300"
-              image={austinS}
-              alt="austin-slater"
-            />
-            <CardContent>
-            <Typography variant="h4">
-            Hello, and welcome to my personal page! I'm an aspiring full-stack developer continuing to upgrade this portfolio as my strength in coding becomes more polished. Please navigate through my from-scratch work of art and don't forget to contact for pointers!
-          </Typography>
-            </CardContent>
-          </Card>
+
+          <Grid
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Card sx={{ mx: "3rem" }} style={{ width: "29rem" }}>
+              <CardMedia
+                component="img"
+                height="300"
+                image={austinS}
+                alt="austin-slater"
+              />
+              <CardContent>
+                <Typography variant="h4">
+                  Hello, and welcome to my personal page! I'm an aspiring full-stack developer continuing to upgrade this portfolio as my strength in coding becomes more polished. Please navigate through my from-scratch work of art and don't forget to contact for pointers!
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         </Box>
       </ScopedCssBaseline>
     </ThemeProvider>
