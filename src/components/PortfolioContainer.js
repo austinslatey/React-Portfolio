@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ContactForm from "./pages/ContactForm";
+import Footer from "./Footer";
 
 
 
@@ -41,6 +42,7 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       </div>
+      <Footer />
     </div>
   );
 }
