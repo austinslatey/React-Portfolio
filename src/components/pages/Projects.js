@@ -62,7 +62,7 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Stack direction="column" spacing={2}>
+                <Stack direction="column" spacing={1}>
                   <a
                     href="https://austinslatey.github.io/concert-scout/"
                     className="btn btn-primary"
@@ -93,7 +93,7 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Stack direction="column" spacing={2}>
+                <Stack direction="column" spacing={1}>
                   <a
                     href="https://travelbug-project.herokuapp.com/"
                     className="btn btn-primary"
