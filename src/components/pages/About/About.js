@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css"
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { ScopedCssBaseline } from "@mui/material";
@@ -6,6 +7,7 @@ import { Grid } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
+import { palette } from '@mui/system';
 // import PropTypes from 'prop-types';
 //import Button from '@mui/material/Button';
 // import { styled } from '@mui/material/styles';
@@ -56,61 +58,61 @@ export default function About() {
                 sx={{
                   width: "100%",
                   maxWidth: 360,
-                  bgcolor: "background.paper",
+                  bgcolor: "#010c3f",
                   position: "relative",
                   overflow: "auto",
                   maxHeight: 300,
                   "& ul": { padding: 0 },
                 }}
               >
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>HTML, Advanced CSS, and Git</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>JavaScipt</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Web APIs</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Third-Party APIs</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Server-Side APIs</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Node JS</ListItemText>
                 </ListItem>
-                <ListItem>
-                  <ListItemText>Object-Oriented Programming(OOP)</ListItemText>
+                <ListItem className="list-item">
+                  <ListItemText>OOP: Object-Oriented Programming </ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Express.js</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>SQL</ListItemText>
                 </ListItem>
-                <ListItem>
-                  <ListItemText>Object-Relational Mapping(ORM)</ListItemText>
+                <ListItem className="list-item">
+                  <ListItemText>ORM: Object-Relational Mapping</ListItemText>
                 </ListItem>
-                <ListItem>
-                  <ListItemText>Model-View-Controller(MVC)</ListItemText>
+                <ListItem className="list-item">
+                  <ListItemText>MVC: Model-View-Controller</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>Computer Science for JavaScipt</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>NoSQL</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>
-                    Progressive Web AppListItemTextcations (PWA)
+                  PWA: Progressive Web Applications
                   </ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>React and State</ListItemText>
                 </ListItem>
-                <ListItem>
+                <ListItem className="list-item">
                   <ListItemText>
                     MERN: Appllo, GraphQL, React Router, Auth, and Heroku
                   </ListItemText>
