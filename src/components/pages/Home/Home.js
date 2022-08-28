@@ -1,11 +1,13 @@
 import React from "react";
-import austinS from "../../Assets/Images/austinS.jpg"
+import austinS from "./Assets/austinS.jpg"
 import { Box, CardContent, CardMedia } from "@mui/material";
 import { ScopedCssBaseline } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+import "./Home.css";
 
 
 const theme = createTheme();
@@ -16,20 +18,28 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <ScopedCssBaseline>
         <Box
+          className="paper-background"
           marginTop={3}
           marginBottom={3}
           sx={{
             flexGrow: 1,
             minHeight: "calc(100vh - 40px)",
-            backgroundColor: "#90E0EF",
+            backgroundColor: "#010c3f",
             borderTopLeftRadius: "8%",
             borderBottomRightRadius: "8%",
           }}>
           <Grid container direction="column" spacing={4}>
-            <Grid item xs={6} marginTop={3} alignSelf="center">
-              <Typography variant="h2" sx={{ minWidth: "100%" }}>
-                Austin Slater
-              </Typography>
+            <Grid 
+              item 
+              xs={6} 
+              marginTop={3} 
+              sx={{   
+              p: 1,
+              m: 1,
+            }} 
+              alignSelf="center"
+              >
+              <h1 className="home-title">Austin Slater</h1>
             </Grid>
           </Grid>
 

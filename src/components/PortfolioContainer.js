@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact";
 import ContactForm from "./pages/ContactForm";
 import Footer from "./Footer";

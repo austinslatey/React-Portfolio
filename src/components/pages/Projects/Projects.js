@@ -1,7 +1,7 @@
 import * as React from "react";
-import recipease from "../../Assets/Images/newREADMEimg.png";
-import travelbug from "../../Assets/Images/travelbug-preview.jpg";
-import concertScout from "../../Assets/Images/concert-scout.png";
+import recipease from "./Assets/newREADMEimg.png";
+import travelbug from "./Assets/travelbug-preview.jpg";
+import concertScout from "./Assets/concert-scout.png";
 import CardHeader from "@mui/material/CardHeader";
 import { Box, CardActions, CardContent, CardMedia } from "@mui/material";
 import { ScopedCssBaseline } from "@mui/material";
@@ -11,9 +11,9 @@ import Card from "@mui/material/Card";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Stack from "@mui/material/Stack";
 
+import "./Projects.css";
 
 const theme = createTheme();
-
 
 export default function Projects() {
   return (
@@ -25,26 +25,18 @@ export default function Projects() {
           sx={{
             flexGrow: 1,
             minHeight: "calc(100vh - 40px)",
-            backgroundColor: "#90E0EF",
+            backgroundColor: "#010c3f",
             borderTopLeftRadius: "8%",
             borderBottomRightRadius: "8%",
           }}
         >
           <Grid container direction="column" spacing={4}>
             <Grid item xs={6} marginTop={3} alignSelf="center">
-              <Typography variant="h2" sx={{ minWidth: "100%" }}>
-                Projects Page
-              </Typography>
+              <h1 className="projects-title">Projects Page</h1>
             </Grid>
           </Grid>
 
-
-          <Grid
-            container
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-
-
+          <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
             <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
               <CardHeader
                 title="Group Project 1: Concert-Scout"
@@ -73,9 +65,6 @@ export default function Projects() {
               </CardActions>
             </Card>
 
-
-
-
             <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
               <CardHeader
                 title="Group Project 2: Travel-Bug"
@@ -89,7 +78,14 @@ export default function Projects() {
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                  To collab with teammates to develop a full-stack web application. Travel Bug is a webpage that hosts travel locations posted by users that allows individual users to browse for travel information and like locations to save to their personal login page. It also, lets the user create new location posts for other users to see in the homepage and lets them rate 1-5 stars on their trip/experience going to that location.
+                  To collab with teammates to develop a full-stack web
+                  application. Travel Bug is a webpage that hosts travel
+                  locations posted by users that allows individual users to
+                  browse for travel information and like locations to save to
+                  their personal login page. It also, lets the user create new
+                  location posts for other users to see in the homepage and lets
+                  them rate 1-5 stars on their trip/experience going to that
+                  location.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -117,8 +113,9 @@ export default function Projects() {
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                  Project one reunites for one last time!! Their duty is to create a
-                  User Interface involving MERN, called RecipEase. Just a bunch of hungry folks with a desire to be more organized
+                  Project one reunites for one last time!! Their duty is to
+                  create a User Interface involving MERN, called RecipEase. Just
+                  a bunch of hungry folks with a desire to be more organized
                   with cooking and shopping
                 </Typography>
               </CardContent>
@@ -133,12 +130,9 @@ export default function Projects() {
                 </Stack>
               </CardActions>
             </Card>
-
           </Grid>
-
         </Box>
       </ScopedCssBaseline>
     </ThemeProvider>
-
   );
 }

@@ -40,9 +40,9 @@ export default function Footer() {
                 py: 3,
                 px: 2,
                 mt: 'auto',
-                minHeight: '20px',
+                minHeight: '30px',
                 textAlign: 'center',
-                backgroundColor: "#90E0EF"
+                backgroundColor: "#010c3f"
             }}
         >
             <CssBaseline />
