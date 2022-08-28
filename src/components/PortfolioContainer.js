@@ -13,9 +13,11 @@ import Footer from "./Footer";
 
 
 
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
+ 
   // checking each condition to see what page we are on , then rendering that page, otherwise rendering the contact form
   const renderPage = () => {
     if (currentPage === "Home") {

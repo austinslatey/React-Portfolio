@@ -1,5 +1,21 @@
 
+.about-title {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    text-align: center;
 
-.list-item {
+}
+
+.sub-heading, .list-item {
     color: #6c41ec;
+    text-align: center;
+}
+
+p {
+    color: #6c41ec;
+    font-size: large;
+}
+.certificates-heading {
+    color: #fff;
+    text-align: center;
 }
