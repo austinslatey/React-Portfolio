@@ -1,0 +1,14 @@
+.paper {
+    background-color: #010c3f;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.image {
+    max-height: 775px;
+    max-width: 1900px;
+    min-width: 1900px;
+}
