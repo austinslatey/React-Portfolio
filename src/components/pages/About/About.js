@@ -66,10 +66,10 @@ export default function About() {
                   width: "100%",
                   maxWidth: 360,
                   bgcolor: "#010c3f",
-                  position: "relative",
+                  position: "center",
                   overflow: "auto",
                   maxHeight: 300,
-                  mx: "30rem", 
+                  mx: "30rem",
                   "& ul": { padding: 0 },
                 }}
               >
