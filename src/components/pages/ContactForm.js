@@ -27,7 +27,7 @@ export default function ContactForm() {
 
     console.log(userName, email, message);
 
-    alert(`Hello ${userName}`);
+    alert(`Hello. Click the mail icon to email me or follow me on github! ${userName}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName("");
@@ -66,7 +66,7 @@ export default function ContactForm() {
             value={message}
             name="message"
             onChange={handleInputChange}
-          ></textarea>
+          >Hello click either the mail icon or follow me on github!</textarea>
         </div>
         <button type="submit" className="btn btn-primary">
           Submit

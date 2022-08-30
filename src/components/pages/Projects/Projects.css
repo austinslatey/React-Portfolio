@@ -3,3 +3,12 @@
   border-bottom: 4px solid #fff;
   min-width: 100%;
 }
+
+a {
+  justify-content: center;
+  text-align: center;
+}
+.centerBtn {
+  justify-content: center;
+  text-align: center;
+}

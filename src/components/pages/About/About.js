@@ -69,6 +69,7 @@ export default function About() {
                   position: "relative",
                   overflow: "auto",
                   maxHeight: 300,
+                  mx: "30rem", 
                   "& ul": { padding: 0 },
                 }}
               >

@@ -37,7 +37,7 @@ export default function Projects() {
           </Grid>
 
           <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
+            <Card sx={{ mx: "5rem"  }} style={{ width: "29rem" }}>
               <CardHeader
                 title="Group Project 1: Concert-Scout"
                 subheader="January 26, 2022"
@@ -51,10 +51,13 @@ export default function Projects() {
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
                   Four developers with one mission, third party APIs.
+                  The skills here learned by the team: HTML and Bulma CSS styling, JavaScript along with DOM, and server-side APIs
                 </Typography>
               </CardContent>
               <CardActions>
-                <Stack direction="column" spacing={1}>
+                <Stack
+                direction="column" 
+                spacing={1}>
                   <a
                     href="https://austinslatey.github.io/concert-scout/"
                     className="btn btn-primary"
@@ -65,7 +68,7 @@ export default function Projects() {
               </CardActions>
             </Card>
 
-            <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
+            <Card sx={{ mx: "5rem" }} style={{ width: "29rem" }}>
               <CardHeader
                 title="Group Project 2: Travel-Bug"
                 subheader="March 13, 2022"
@@ -100,7 +103,7 @@ export default function Projects() {
               </CardActions>
             </Card>
 
-            <Card sx={{ mx: "2rem" }} style={{ width: "29rem" }}>
+            <Card sx={{ mx: "5rem" }} style={{ width: "29rem" }}>
               <CardHeader
                 title="Group Project 3: RecipEase"
                 subheader="March 13, 2022"

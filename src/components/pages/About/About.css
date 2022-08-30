@@ -12,8 +12,9 @@
 }
 
 p {
-    color: #6c41ec;
+    color: #fff;
     font-size: large;
+    text-align: center;
 }
 .certificates-heading {
     color: #fff;
